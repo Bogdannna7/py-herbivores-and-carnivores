@@ -34,12 +34,3 @@ class Carnivore(Animal):
                 herbivore.health -= 50
             if herbivore.health <= 0:
                 Animal.alive.remove(herbivore)
-
-
-lion = Carnivore("King Lion")
-pantera = Carnivore("Bagira")
-rabbit = Herbivore("Susan")
-print(Animal.alive)
-# output = "[{Name: King Lion, Health: 100, Hidden: False}, " \
-#          "{Name: Bagira, Health: 100, Hidden: False}, " \
-#          "{Name: Susan, Health: 100, Hidden: False}]\n"
