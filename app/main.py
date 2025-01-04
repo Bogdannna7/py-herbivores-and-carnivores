@@ -10,9 +10,8 @@ class Animal:
         self.name = name
         self.health = health
         self.hidden = hidden
-        if self.health > 0:
-            if self not in Animal.alive:
-                Animal.alive.append(self)
+        if self.health > 0 and self not in Animal.alive:
+            Animal.alive.append(self)
 
     def __repr__(self) -> str:
         return (f"{{Name: {self.name}, Health: {self.health}, "
